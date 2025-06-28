@@ -17,11 +17,11 @@
     <Panel hittest="false" class="MainHud">
         <Panel id="ExamplePanel">
 
-            <Image id="BannerImage" src="file://{resources}/images/custom_game/tstl.png" />
+            <!-- <Image id="BannerImage" src="file://{resources}/images/custom_game/tstl.png" /> -->
 
-            <Label class="ExampleTitle" text="TypeScript Dota Addon template" />
+            <Label class="ExampleTitle" text="Dota 2 Lockout" />
 
-            <Label class="ExampleParagraph" text="This is an example text box! Close it to apply the 'panic' modifier to your hero. You can remove this panel in content/panorama/layout/custom_game/hud.xml" />
+            <Label class="ExampleParagraph" text="Welcome to Dota Lockout! This is a custom gamemode inspired by Minecraft Lockout, in which teams of players compete to be the first to complete a set of random challenges! These challeanges can range from buying specific items (e.g.,being the first to buy a radience), taking objectives (taking the second rosh of the game), and more! Complete the majority of challenges to win!" />
 
             <Button id="CloseButton" onactivate="OnCloseButtonClicked()">
                 <Label text="Close" />
