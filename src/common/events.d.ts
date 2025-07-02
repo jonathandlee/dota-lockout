@@ -14,7 +14,10 @@
 // To declare an event for use, add it to this table with the type of its data
 interface CustomGameEventDeclarations {
     example_event: ExampleEventData,
-    ui_panel_closed: UIPanelClosedEventData
+    ui_panel_closed: UIPanelClosedEventData,
+    challenge_progress_request: ChallengeProgressRequestData,
+    challenge_progress_update: ChallengeProgressUpdateData,
+    challenge_completed: ChallengeCompletedData
 }
 
 // Define the type of data sent by the example_event event
@@ -22,8 +25,32 @@ interface ExampleEventData {
     myNumber: number;
     myBoolean: boolean;
     myString: string;
-    myArrayOfNumbers: number[]
+    myArrayOfNumbers: number[];
 }
 
 // This event has no data
 interface UIPanelClosedEventData {}
+
+// Challenge progress events
+interface ChallengeProgressRequestData {}
+
+interface ChallengeProgressUpdateData {
+    challenges: {
+        [key: string]: {
+            name: string;
+            description: string;
+            progress: number;
+            maxProgress: number;
+            completed: boolean;
+            completedBy: number; // DotaTeam as number for networking
+            completedAt: number;
+        }
+    }
+}
+
+interface ChallengeCompletedData {
+    challengeKey: string;
+    challengeName: string;
+    team: number; // DotaTeam as number
+    teamName: string;
+}
