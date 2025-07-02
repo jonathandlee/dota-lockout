@@ -62,4 +62,177 @@
     color: white;
 }
 
+/* Challenge UI Styles */
+#ChallengeUI {
+    horizontal-align: right;
+    vertical-align: center;
+    width: 520px;
+    height: 500px;
+    z-index: 100;
+}
 
+#ChallengeTab {
+    horizontal-align: right;
+    vertical-align: center;
+    width: 120px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #444444;
+    margin-right: -80px;
+}
+
+#ChallengeTab:hover {
+    margin-right: 0px;
+    background-color: rgba(0, 100, 200, 0.9);
+}
+
+#ChallengeTab Label {
+    horizontal-align: center;
+    vertical-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.challenge-panel {
+    horizontal-align: right;
+    vertical-align: center;
+    width: 400px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 2px solid #444444;
+    margin-right: -400px;
+}
+
+.challenge-panel.visible {
+    margin-right: 0px;
+}
+
+.challenge-panel.hidden {
+    margin-right: -400px;
+}
+
+#ChallengePanelHeader {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 100, 200, 0.9);
+    border-bottom: 2px solid #444;
+    flow-children: right;
+}
+
+#ChallengePanelTitle {
+    horizontal-align: left;
+    vertical-align: center;
+    margin-left: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#ChallengeCloseButton {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: rgba(200, 0, 0, 0.8);
+    border-radius: 15px;
+    horizontal-align: right;
+}
+
+#ChallengeCloseButton Label {
+    horizontal-align: center;
+    vertical-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ChallengeCloseButton:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+#ChallengeList {
+    width: 100%;
+    height: 458px;
+    flow-children: down;
+    padding: 10px;
+}
+
+.challenge-item {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5px;
+    background-color: rgba(40, 40, 40, 0.8);
+    border: 1px solid #666666;
+    flow-children: right;
+    padding: 8px;
+}
+
+.challenge-item.completed {
+    background-color: rgba(0, 100, 0, 0.3);
+    border-color: #00aa00;
+}
+
+.challenge-item.radiant-completed {
+    border-left: 4px solid #74C7EC;
+}
+
+.challenge-item.dire-completed {
+    border-left: 4px solid #FF6B6B;
+}
+
+.challenge-info {
+    width: 70%;
+    flow-children: down;
+}
+
+.challenge-name {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.challenge-description {
+    color: #cccccc;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.challenge-progress {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.challenge-progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+}
+
+.challenge-status {
+    width: 30%;
+    vertical-align: center;
+    horizontal-align: center;
+}
+
+.challenge-status-text {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.challenge-completed-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #4CAF50;
+    horizontal-align: center;
+    vertical-align: center;
+}
+
+.challenge-completed-icon Label {
+    horizontal-align: center;
+    vertical-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}

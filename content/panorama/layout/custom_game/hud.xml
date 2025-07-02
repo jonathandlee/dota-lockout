@@ -27,5 +27,27 @@
                 <Label text="Close" />
             </Button>
         </Panel>
+
+        <!-- Challenge Progress UI -->
+        <Panel id="ChallengeUI" hittest="true">
+            <!-- Tab Button -->
+            <Button id="ChallengeTab" onactivate="OnChallengeTabClicked()">
+                <Label text="Challenges" />
+            </Button>
+
+            <!-- Challenge Panel (initially hidden) -->
+            <Panel id="ChallengePanel" class="challenge-panel hidden">
+                <Panel id="ChallengePanelHeader">
+                    <Label id="ChallengePanelTitle" text="Challenge Progress" />
+                    <Button id="ChallengeCloseButton" onactivate="OnChallengePanelClose()">
+                        <Label text="×" />
+                    </Button>
+                </Panel>
+
+                <Panel id="ChallengeList">
+                    <!-- Challenge items will be dynamically populated here -->
+                </Panel>
+            </Panel>
+        </Panel>
     </Panel>
 </root>
